@@ -2,5 +2,9 @@
   "master": {
     "port": 3000
   },
-  "pullInterval": 30000
+  "pullInterval": 5000,
+  "webConsole":{
+    "port": 8080,
+    "reloadInteval": 5000
+  }
 }

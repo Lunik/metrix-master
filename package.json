@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Lunik/metrix-master#readme",
   "dependencies": {
+    "bootstrap": "^3.3.6",
     "chart.js": "^2.1.3",
     "express": "^4.13.4",
     "jquery": "^2.2.4",

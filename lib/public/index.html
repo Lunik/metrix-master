@@ -8,7 +8,49 @@
     <link rel="stylesheet" href="src/css/style.css">
   </head>
   <body>
-
+      <div class="row">
+        <div class="col-xs-3 stats-holder">
+          <div class="big-info" id="nodes-nb">
+            <i class="icon fa fa-empire fa-5x"></i>
+            <div class="inner-info">
+              <div class="title">Nodes</div>
+              <div class="data"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 stats-holder">
+          <div class="big-info" id="latency-avg">
+            <i class="icon fa fa-rocket fa-5x"></i>
+            <div class="inner-info">
+              <div class="title">Latency (ms)</div>
+              <div class="data"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 stats-holder">
+          <div class="big-info" id="uptime-avg">
+            <i class="icon fa fa-heartbeat fa-5x"></i>
+            <div class="inner-info">
+              <div class="title">UpTime</div>
+              <div class="data"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 stats-holder">
+          <div class="big-info" id="speed-avg">
+            <i class="icon fa fa-sort fa-5x"></i>
+            <div class="inner-info">
+              <div class="title">Speed (mb/s)</div>
+              <div class="data">
+                <i class="fa fa-sort-up"></i>
+                <span class="speed" id="up"></span>
+                <i class="fa fa-sort-down"></i>
+                <span class="speed" id="down"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div>
     <script src="/jquery.js"></script>
     <script src="/bootstrap/bootstrap.js"></script>
     <script src="/chart.js"></script>

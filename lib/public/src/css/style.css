@@ -1,0 +1,58 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css');
+body{
+  min-width: 900px;
+}
+.stats-holder {
+    background: #090909;
+    border: 1px solid rgba(255,255,255,.05);
+}
+
+/**************/
+/*  BIG INFO  */
+/**************/
+
+.big-info{
+  height: 100px;
+}
+
+.big-info#nodes-nb{
+  color: #27AE60;
+}
+
+.big-info#latency-avg{
+  color: #F7A253;
+}
+
+.big-info#uptime-avg{
+  color: #F75353;
+}
+
+.big-info#speed-avg{
+  color: #32C8DE;
+}
+.big-info > div{
+  display: inline-block;
+}
+
+.big-info .icon{
+  float: left;
+
+  margin: 15px 10px;
+}
+
+.big-info .inner-info .title{
+  margin: 10px 0;
+
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.big-info .inner-info .data{
+  margin: 0 10px;
+
+  font-size: 20px;
+}
+
+.big-info#speed-avg .data .speed{
+  margin: 0 10px 0 0;
+}

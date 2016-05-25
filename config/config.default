@@ -1,0 +1,6 @@
+{
+  "master": {
+    "port": 3000
+  },
+  "pullInterval": 30000
+}

@@ -56,3 +56,28 @@ body{
 .big-info#speed-avg .data .speed{
   margin: 0 10px 0 0;
 }
+
+/****************/
+/*  CHART INFO  */
+/****************/
+
+.chart-info {
+  height: 100px;
+  width: 100%;
+}
+
+.chart-info .canvas{
+  margin-top: 5%;
+  height: 100%;
+  vertical-align: bottom;
+}
+
+.chart-info .canvas > .scale{
+  display: inline-block;
+  height: 100%;
+}
+
+.chart-info .canvas > div{
+  display: inline-block;
+  border: 0.5px solid #090909;
+}

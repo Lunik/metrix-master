@@ -5,6 +5,9 @@
   "pullInterval": 5000,
   "webConsole":{
     "port": 8080,
-    "reloadInterval": 5000
+    "reloadInterval": 5000,
+    "chart":{
+      "precision": 10
+    }
   }
 }

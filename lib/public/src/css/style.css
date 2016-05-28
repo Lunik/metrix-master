@@ -69,7 +69,15 @@ body{
 .chart-info .canvas{
   margin-top: 5%;
   height: 100%;
-  vertical-align: bottom;
+}
+
+.chart-info#speed-avg .canvas#up{
+  height: 50%;
+}
+
+.chart-info#speed-avg .canvas#down{
+  margin-top: 0;
+  height: 50%;
 }
 
 .chart-info .canvas > .scale{

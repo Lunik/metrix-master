@@ -88,4 +88,24 @@ body{
 .chart-info .canvas > div{
   display: inline-block;
   border: 0.5px solid #090909;
+  cursor: pointer;
+}
+
+.chart-info .canvas > div:hover{
+  border: 0.5px solid #FFF;
+}
+
+.chart-info .canvas div > .title{
+  position: fixed;
+
+  min-width: 20px;
+
+  padding: 2px;
+
+  color: #000;
+  text-align: center;
+
+  background-color: #FFF;
+
+  border-radius: 4px;
 }

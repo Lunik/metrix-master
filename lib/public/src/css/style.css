@@ -98,8 +98,6 @@ body{
 .chart-info .canvas div > .title{
   position: fixed;
 
-  min-width: 20px;
-
   padding: 2px;
 
   color: #000;

@@ -73,7 +73,7 @@ body{
 }
 
 .chart-info > .title{
-  margin-top: 2%;
+  margin: 5px 0 0 15px;
 
   font-weight: bold;
   font-size: 15px;

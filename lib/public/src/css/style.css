@@ -31,7 +31,7 @@ body{
   color: #F75353;
 }
 
-.big-info#speed-avg{
+.big-info#load-avg{
   color: #32C8DE;
 }
 .big-info > div{

@@ -2,11 +2,8 @@
 body{
   min-width: 1000px;
   background: #090909;
+  color: #675F5F;
   overflow: hidden;
-}
-
-.row{
-  margin-left: 10px;
 }
 
 .stats-holder {
@@ -69,24 +66,30 @@ body{
 /****************/
 
 .chart-info {
-  height: 100px;
+  height: 150px;
   width: 100%;
 
   padding-bottom: 5%;
 }
 
+.chart-info > .title{
+  margin-top: 2%;
+
+  font-weight: bold;
+  font-size: 15px;
+}
 .chart-info .canvas{
   margin-top: 5%;
-  height: 100%;
+  height: 70%;
 }
 
 .chart-info#speed-avg .canvas#up{
-  height: 50%;
+  height: 35%;
 }
 
 .chart-info#speed-avg .canvas#down{
   margin-top: 0;
-  height: 50%;
+  height: 35%;
 }
 
 .chart-info .canvas > .scale{

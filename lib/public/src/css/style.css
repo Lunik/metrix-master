@@ -1,7 +1,10 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css');
 body{
   min-width: 1000px;
+  background: #090909;
+  overflow: hidden;
 }
+
 .stats-holder {
     background: #090909;
     border: 1px solid rgba(255,255,255,.05);
@@ -64,11 +67,16 @@ body{
 .chart-info {
   height: 100px;
   width: 100%;
+
+  padding-bottom: 5%;
 }
 
 .chart-info .canvas{
   margin-top: 5%;
   height: 100%;
+
+  padding-bottom: 1px;
+  border-bottom: 1px solid #675F5F;
 }
 
 .chart-info#speed-avg .canvas#up{
@@ -87,7 +95,11 @@ body{
 
 .chart-info .canvas > div{
   display: inline-block;
+
+  min-height: 3px !important;
+
   border: 0.5px solid #090909;
+
   cursor: pointer;
 }
 

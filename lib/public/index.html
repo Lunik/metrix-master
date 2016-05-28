@@ -37,15 +37,11 @@
         </div>
       </div>
       <div class="col-xs-3 stats-holder">
-        <div class="big-info" id="speed-avg">
-          <i class="icon fa fa-sort fa-5x"></i>
+        <div class="big-info" id="load-avg">
+          <i class="icon fa fa-tachometer fa-5x"></i>
           <div class="inner-info">
-            <div class="title">Speed (mb/s)</div>
+            <div class="title">Load average</div>
             <div class="data">
-              <i class="fa fa-sort-up"></i>
-              <span class="speed" id="up"></span>
-              <i class="fa fa-sort-down"></i>
-              <span class="speed" id="down"></span>
             </div>
           </div>
         </div>
@@ -77,16 +73,27 @@
         </div>
       </div>
       <div class="col-xs-3 stats-holder">
-        <div class="chart-info" id="speed-avg">
-          <div class="title">Speed (mb/s)</div>
-          <div class="canvas" id="up">
-            <span class="scale"></span>
-          </div>
-          <div class="canvas" id="down">
+        <div class="chart-info" id="load-avg">
+          <div class="title">Load average</div>
+          <div class="canvas">
             <span class="scale"></span>
           </div>
         </div>
       </div>
+    </div>
+    <div class="node-list">
+      <table class="table table-condensed">
+        <thead>
+        <tr>
+          <th><i class="fa fa-server" title="Node name"></i></th>
+          <th><i class="fa fa-bar-chart" title="Node type"></i></th>
+          <th><i class="fa fa-clock-o" title="Node latency"></i></th>
+          <th><i class="fa fa-heartbeat" title="Node uptime"></i></th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
     </div>
     <script src="/jquery.js"></script>
     <script src="/bootstrap/bootstrap.js"></script>

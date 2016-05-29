@@ -1,0 +1,23 @@
+notifications:
+  email: false
+language: node_js
+node_js:
+- '6'
+- '5'
+- '4'
+
+before_install:
+- npm install standard -g
+
+- git clone https://github.com/Lunik/metrix-node.git
+- cd metrix-node
+- npm install
+- npm start &
+- cd ..
+
+- npm install
+
+script:
+- standard
+- npm start &
+- sleep 60

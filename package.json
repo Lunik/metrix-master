@@ -27,7 +27,7 @@
   },
   "standard": {
     "ignore": [
-      "metrix-node/",
+      "metrix-node/"
     ],
     "globals": [
       "$",

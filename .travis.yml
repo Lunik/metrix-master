@@ -18,6 +18,7 @@ before_install:
 script:
 - standard
 - npm start &
+- sleep 60
 - curl http://localhost:8080
 - curl http://localhost:8080/config.json
 - curl http://localhost:8080/scrape.json
@@ -25,7 +26,6 @@ script:
 - curl http://localhost:8080/d3.js
 - curl http://localhost:8080/bootstrap/bootstrap.js
 - curl http://localhost:8080/bootstrap/bootstrap.css
-- sleep 60
 
 deploy:
   provider: npm

@@ -5,20 +5,16 @@ node_js:
 - '6'
 - '5'
 - '4'
-
 before_install:
 - sudo apt-get update -qq
 - sudo apt-get install curl
 - npm install standard -g
-
 - git clone https://github.com/Lunik/metrix-node.git
 - cd metrix-node
 - npm install
 - npm start &
 - cd ..
-
 - npm install
-
 script:
 - standard
 - npm start &
@@ -30,3 +26,11 @@ script:
 - curl http://localhost:8080/bootstrap/bootstrap.js
 - curl http://localhost:8080/bootstrap/bootstrap.css
 - sleep 60
+
+deploy:
+  provider: npm
+  email: guillaume.lunik@gmail.com
+  on:
+    tags: true
+  api_key:
+    secure: L1zLRn98kw5JnAaZfZKizXG72a7KOt5IkexZz9dL0GcjMTmxUNGVBW/EeiGReEz+gvaIAShm9DTuOBlEUuw+cG3xDaJYVK/mW+rSt14jVpuZgdRAFKBp7z8YYgzjhzW2p6T9eIBO1XJtsU5TQBd617slIIDCJ2CGJ3VBTDFGWVzz7K0EyTwIM1s4FKet7x2ZjLooJNqOmP2L2k1t+b9jma+j/zldTYvHVdCl9teqyXOoifIEMtwQySrzNf8Yyll5uKUfe7fe/nanxjq5oeOshdHdpD7SHUfX2gwCYZMbqx1fUn6ihtpiJUJqQH0fCrsOlMFAHr6nh21GqQFxebuf5WS8DVDw83HNDi8XJkycEUtI5pmh8T1IsElDrgevTo7d7/78giZbvw+Yvd49IEBVFZ7MjKRGLOGDuuEHzCig3MTYEbxC2NjB9/LdN5V6GtNQZplxoeMGmVnLMX1ogLT9F0BHPyh3bKJfu9gkDx6n6ct4qu+IesPWKJKYS++ZBJf7vgOcke1wYG0VPqddjSzG5kFzsMByGqPWIrIRuYj1+59vp0fj9Z0SH+MfFQnVLA5cCrWWIOdHQkz7vehGbuuska7Lva3ln5Kew2bhXvM3bu1xf45Uqzz0XaaX889V+t0pRaycYWV1E2pE77pQGOeBcL1MwjouDwjzrF2bMrr4K1g=

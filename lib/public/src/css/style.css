@@ -129,6 +129,9 @@ body{
 /****************/
 /*  TABLE INFO  */
 /****************/
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #222;
+}
 
 .node-list thead i{
   margin-right: 10px;
@@ -147,6 +150,10 @@ body{
   background-color: #FFF;
 
   border-radius: 4px;
+}
+
+.node-list tbody tr{
+  cursor: pointer;
 }
 
 .node-list tbody td#active{

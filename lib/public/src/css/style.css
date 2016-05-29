@@ -1,7 +1,9 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 body{
   min-width: 1000px;
   background: #090909;
+  font-family: roboto, sans-serif;
   color: #675F5F;
   overflow: hidden;
 }
@@ -115,6 +117,29 @@ body{
   position: fixed;
 
   padding: 2px;
+
+  color: #000;
+  text-align: center;
+
+  background-color: #FFF;
+
+  border-radius: 4px;
+}
+
+/****************/
+/*  TABLE INFO  */
+/****************/
+
+.node-list thead i{
+  margin-right: 10px;
+
+  cursor: pointer;
+}
+
+.node-list thead i > .title{
+  position: fixed;
+
+  padding: 5px;
 
   color: #000;
   text-align: center;

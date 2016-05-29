@@ -20,7 +20,7 @@
       </div>
       <div class="col-xs-3 stats-holder">
         <div class="big-info" id="latency-avg">
-          <i class="icon fa fa-rocket fa-5x"></i>
+          <i class="icon fa fa-clock-o fa-5x"></i>
           <div class="inner-info">
             <div class="title">Latency (ms)</div>
             <div class="data"></div>
@@ -58,7 +58,7 @@
       </div>
       <div class="col-xs-3 stats-holder">
         <div class="chart-info" id="latency-avg">
-          <div class="title">Latency (xs)</div>
+          <div class="title">Latency (ms)</div>
           <div class="canvas">
             <span class="scale"></span>
           </div>
@@ -85,9 +85,15 @@
       <table class="table table-condensed">
         <thead>
         <tr>
+          <th><i class="fa fa-check-circle-o" title="Node active"></i></th>
           <th><i class="fa fa-server" title="Node name"></i></th>
           <th><i class="fa fa-bar-chart" title="Node type"></i></th>
           <th><i class="fa fa-clock-o" title="Node latency"></i></th>
+          <th><i class="fa fa-gears" title="Node cpu"></i></th>
+          <th><i class="fa fa-tachometer" title="Node load average"></i>(1 / 5 / 15m)</th>
+          <th><i class="fa fa-puzzle-piece" title="Node memory"></i></th>
+          <th><i class="fa fa-plug" title="Node interfaces"></i>(ip / mac)</th>
+          <th><i class="fa fa-rocket" title="Node speed"></i>(mb/s)</th>
           <th><i class="fa fa-heartbeat" title="Node uptime"></i></th>
         </tr>
         </thead>

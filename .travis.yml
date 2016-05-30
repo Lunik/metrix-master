@@ -18,10 +18,8 @@ before_install:
 - cd ..
 - npm install
 
-job_standard:
+script:
 - standard
-
-job_check_aviability:
 - npm start &
 - sleep 60
 - curl http://localhost:8080

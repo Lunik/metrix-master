@@ -1,10 +1,12 @@
 notifications:
   email: false
+
 language: node_js
 node_js:
 - '6'
 - '5'
 - '4'
+
 before_install:
 - sudo apt-get update -qq
 - sudo apt-get install curl
@@ -15,8 +17,11 @@ before_install:
 - npm start &
 - cd ..
 - npm install
-script:
+
+job_standard:
 - standard
+
+job_check_aviability:
 - npm start &
 - sleep 60
 - curl http://localhost:8080

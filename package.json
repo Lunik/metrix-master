@@ -20,7 +20,7 @@
   "homepage": "https://github.com/Lunik/metrix-master#readme",
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "d3": "^4.2.1",
+    "d3": "^4.7.4",
     "express": "^4.13.4",
     "jquery": "^3.1.0",
     "socket.io": "^1.4.6"
